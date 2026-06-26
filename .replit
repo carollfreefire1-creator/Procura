@@ -1,0 +1,16 @@
+modules = ["nodejs-24"]
+[agent]
+expertMode = true
+stack = "BEST_EFFORT_FALLBACK"
+
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+NODE_ENV = "development"
+RATE_LIMIT_ENABLED = "false"
+HONEYPOT_FIELD_NAME = "website_confirm"
+DPO_EMAIL = "privacidade@example.com"
+NEXT_PUBLIC_GA_ID = ""
